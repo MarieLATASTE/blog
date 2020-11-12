@@ -7,7 +7,7 @@ body{
     flex-direction:column; 
 }
 header{
-    padding:5%;
+    padding:3%;
     display:flex;
     flex-direction:column;
     border:1px solid transparent;
@@ -22,9 +22,9 @@ header{
     background:linear-gradient(180deg, rgba(255,253,109,1) 43%, rgba(255,141,22,1) 100%);
 }
 .telescope{
-    padding-top:3%;
-    width:6rem;
-    height:6rem;
+    padding-top:5%;
+    width:5rem;
+    height:5rem;
     /* color: #3a3221; */
 }
 
@@ -35,13 +35,12 @@ header{
 }
 .search{
     padding-top:15%;
-    /* padding-right: 2%; */
     border:1px solid transparent;
     border-radius:20px;
     background:rgb(111,228,238);
     background:linear-gradient(0deg, rgba(111,228,238,1) 41%, rgba(255,253,109,1) 89%);
     margin-top:5%;
-    padding-right:55%;
+    padding-right:25%;
     margin-bottom:5%;
     margin-left:5%;
 }
@@ -51,34 +50,31 @@ h1{
 h3, h5{
     color:#6FE4EE;
 }
-
 nav{
-    margin-top:5%;
     display:flex;
     justify-content:space-around;
-    /* align-items: center; */
 }
 .image{
     text-align:center;
-    padding: 2rem;
+    padding: 1rem;
     border:1px solid transparent;
     border-radius:50%;
 }
 .image:hover{
-    transform: scale(1.4);
+    /* transform:scale(1.4); */
     box-shadow:5px 10px 20px red inset;
 }
 .mini{
     width:3.5rem;
     height:3.5rem;
 }
-
+/* page index.html */
 .main{
-    display: flex;
-    justify-content: space-around;
+    display:flex;
+    justify-content:space-around;
 }
 .left{
-    width: 45%;
+    width:45%;
 }
 .left img{
     width:75%;
@@ -87,15 +83,47 @@ nav{
     padding-right:5%;
 }
 .right{
-    /* color: #fefefe; */
     width: 35%;
     border: 1px solid transparent;
     border-radius: 20px;
     background: rgb(255,253,109);
     background: linear-gradient(180deg, rgba(255,253,109,1) 43%, rgba(255,141,22,1) 100%);
 }
-/* page aticle.html */
+/* page sommaire.html */
+.container{
+    border: 1px solid white;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.box2, .box3, .box4{
+    padding: 1.5rem;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-align: center;
+    background: rgb(255,253,109);
+    background: linear-gradient(180deg, rgba(255,253,109,1) 43%, rgba(255,141,22,1) 100%);
+    width: 50%;
+    margin: 3%;
+}
+.box1{
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 1rem;
+    height: 20%;
+    box-shadow:10px 15px 25px 10px rgb(95, 18, 18) inset;
+    width: 50%;
+}
+.box2, .box3, .box4{
 
+    height: 10%; 
+}
 
 footer{
     display: flex;
@@ -117,4 +145,24 @@ ul > li{
 }
 .one1{
     padding-right: 1rem;
+}
+/* page form.html */
+.formulaire{
+    display: flex;
+}
+.leftF{
+    width:45%;
+}
+.leftF img{
+    width:75%;
+    height:85%;
+    padding-left:2%;
+    padding-right:5%;
+}
+.rightF{
+    width: 45%;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background: rgb(255,253,109);
+    background: linear-gradient(180deg, rgba(255,253,109,1) 43%, rgba(255,141,22,1) 100%);
 }
