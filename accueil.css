@@ -48,7 +48,7 @@ header{
 h1{
     color:#1C0000;
 }
-h3{
+h3, h5{
     color:#6FE4EE;
 }
 
@@ -81,10 +81,10 @@ nav{
     width: 45%;
 }
 .left img{
-    width: 75%;
-    height: 85%;
-    padding-left: 2%;
-    padding-right: 5%;
+    width:75%;
+    height:85%;
+    padding-left:2%;
+    padding-right:5%;
 }
 .right{
     /* color: #fefefe; */
@@ -94,9 +94,12 @@ nav{
     background: rgb(255,253,109);
     background: linear-gradient(180deg, rgba(255,253,109,1) 43%, rgba(255,141,22,1) 100%);
 }
+/* page aticle.html */
+
 
 footer{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 
