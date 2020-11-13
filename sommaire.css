@@ -2,9 +2,6 @@
 .container{
     border: 1px solid transparent;
     margin: 0 5% 5% 5%;
-  /*  margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;*/
     display: flex;
     flex-direction: column;
     /* flex-wrap:wrap; */
@@ -17,9 +14,13 @@
     border: 1px solid transparent;
     border-radius: 20px;
     text-align: center;
-    height: 20vh;
+    height: 10vh;
     box-shadow:10px 15px 25px 10px rgb(95, 18, 18) inset;
     width: 50%;
+}
+.contain{
+    display: flex;
+    flex-direction: column;
 }
 .box2, .box3, .box4{
     padding: 1.5rem;
@@ -28,9 +29,9 @@
     text-align: center;
     background: rgb(255,253,109);
     background: linear-gradient(180deg, rgba(255,253,109,1) 43%, rgba(255,141,22,1) 100%);
-    width: 50%;
-    height: 15%;
-    margin-top: 3%;
+    width: 18vh;
+    height: 8vh;
+    margin-top: 5%;
 }
 .box2:hover, .box3:hover, .box4:hover{
     background: linear-gradient(180deg, rgba(255,141,22,1) 23%, rgba(255,253,109,1) 100%);
@@ -65,11 +66,16 @@ ul > li{
     padding-right: 1rem;
 }
 
-
-
-/* responsive sommaire.html */
-@media (min-width:768){
+@media (min-width:768px){
     .container{
-        flex-direction: row; 
+        flex-wrap: wrap;
+        align-items: stretch; 
+    }
+    .contain{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .box1{
+        margin-left: 22%;
     }
 }   
