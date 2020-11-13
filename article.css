@@ -1,0 +1,15 @@
+.article{
+    width: 74%;
+    height: 60vh;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12vw;
+}
+
+h3{
+    color:#6FE4EE;
+}
+
+
