@@ -1,0 +1,20 @@
+/* page form.html */
+.formulaire{
+    display: flex;
+}
+.leftF{
+    width:45%;
+}
+.leftF img{
+    width:75%;
+    height:85%;
+    padding-left:2%;
+    padding-right:5%;
+}
+.rightF{
+    width: 45%;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background: rgb(255,253,109);
+    background: linear-gradient(180deg, rgba(255,253,109,1) 43%, rgba(255,141,22,1) 100%);
+}

@@ -1,0 +1,68 @@
+
+.container{
+    border: 1px solid transparent;
+    margin: 0 5% 5% 5%;
+  /*  margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;*/
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap:wrap; */
+    justify-content: space-around; 
+    align-items: center; 
+}
+.box1{
+    padding: 1rem;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    text-align: center;
+    height: 20%;
+    box-shadow:10px 15px 25px 10px rgb(95, 18, 18) inset;
+    width: 50%;
+}
+.box2, .box3, .box4{
+    padding: 1.5rem;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-align: center;
+    background: rgb(255,253,109);
+    background: linear-gradient(180deg, rgba(255,253,109,1) 43%, rgba(255,141,22,1) 100%);
+    width: 50%;
+    height: 15%;
+    margin-top: 3%;
+}
+.box2:hover, .box3:hover, .box4:hover{
+    background: linear-gradient(180deg, rgba(255,141,22,1) 23%, rgba(255,253,109,1) 100%);
+}
+.box4{
+    margin-bottom: 3%;
+}
+a{
+    
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ul > li{
+    display: inline;
+    color: #6FE4EE;
+    font-size: 1rem;
+}
+.one{
+    padding-right: 1rem;
+}
+.one1{
+    padding-right: 1rem;
+}
+
+
+
+/* responsive sommaire.html */
+@media (min-width:768){
+    .container{
+        flex-direction: row; 
+    }
+}   
