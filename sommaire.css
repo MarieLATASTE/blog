@@ -78,4 +78,13 @@ ul > li{
     .box1{
         margin-left: 22%;
     }
+    .box2, .box3, .box4{
+        width: 16vh;
+        height: 16vh;
+    }
 }   
+@media (min-width: 1440px){
+    .box2, .box3, .box4{
+        width: 25vh;
+    }
+}
