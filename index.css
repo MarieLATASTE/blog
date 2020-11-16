@@ -12,8 +12,9 @@ header{
     flex-direction:column;
     border:1px solid transparent;
 }
-.titre{
+.up{
     display:flex;
+    flex-direction: column;
     justify-content:space-evenly;
     height:50%;
     border:1px solid transparent;
@@ -21,17 +22,41 @@ header{
     background:rgb(255,253,109);
     background:linear-gradient(180deg, rgba(255,253,109,1) 43%, rgba(255,141,22,1) 100%);
 }
-.vis1{
-    width: 1.2rem;
-    height: 1.2rem;
-    padding-top: 2%;
-    padding-right: 2%;
-}
+.balls{
+    margin-top:3vh;
+    display: flex;
+    justify-content:space-between;
+  }
 .vis2{
-    width: 1.2rem;
-    height: 1.2rem;
-    padding-top: 2%;
-    padding-left: 2%;
+    width: 20px;
+    height: 20px;
+}
+/*
+.ball-1, .ball-2, .ball-3, .ball-4{
+    border-radius:50%;
+/*    width: 20px;
+    height: 20px;
+  }*/
+.ball-1{
+    margin-left:3vh;
+  }
+.search{
+    border: 1px solid #F57F17;
+    border-radius: 20px;
+    background: linear-gradient(180deg,  #BBDEFB, #FFF176);
+    width: 25vh;
+    height: 5vh;
+    margin-left:15vh; 
+    display: flex;
+    align-items:center;
+}
+.ball-2{
+    margin-right:3vh;
+  }
+
+.titre{
+    display: flex;
+    justify-content: space-around;
 }
 .telescope{
     padding-top:5%;
@@ -39,21 +64,20 @@ header{
     height:5rem;
     color: #3a3221; 
 }
-.up{
-    display:flex;
-    flex-direction:column;
+.blog{
+    margin-right: 15vh;
 }
-.search{
-    padding-top:3%;
-    padding-bottom: 3%;
-    padding-right: 9rem;
-    border:1px solid transparent;
-    border-radius:20px;
-    background:rgb(111,228,238);
-    background:linear-gradient(0deg, rgba(111,228,238,1) 41%, rgba(255,253,109,1) 89%);
-    margin-top:5%; 
-    margin-right:0%;
-}   
+.reballs{
+    margin-bottom:3vh;
+    display: flex;
+    justify-content: space-between;
+} 
+.ball-3{
+    margin-left:3vh;
+  }
+  .ball-4{
+    margin-right:3vh;
+  } 
 h1{
     color:#1C0000;
     margin-left: 3rem;
@@ -121,6 +145,9 @@ ul > li{
 @media (min-width:736px){
     .left, .right{
         width:50%;
+    }
+    .right{
+        margin-right: 3vh;
     }
 }
 
