@@ -32,15 +32,15 @@ header{padding:3%;
     display:flex;
     align-items:center;}
 
-
+/*
  .search-container {
     float: right;
-  }
+  }*/
   
    input[type=text] {
     padding: 6px;
     margin-top: 8px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     background:linear-gradient(180deg,#FFF176,#BBDEFB);
     border: 1px solid #F57F17;
     border-bottom-left-radius: 20px;
@@ -55,8 +55,8 @@ header{padding:3%;
     margin-right: 16px;
     background:linear-gradient(180deg,#FFF176,#BBDEFB);
     /* font-size: 17px; */
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border:1px solid#F57F17;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
