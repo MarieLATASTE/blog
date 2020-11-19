@@ -17,7 +17,7 @@
     width:50%;}
 .contain{display:flex;
     flex-direction:column;}
-.box2, .box3, .box4{
+/*.box2,*/ .box3, .box4{
     padding:1.5rem;
     border:1px solid white;
     border-radius:20px;
@@ -27,7 +27,7 @@
     width:18vh;
     height:8vh;
     margin-top:5%;}
-.box2:hover, .box3:hover, .box4:hover{
+/*.box2:hover,*/ .box3:hover, .box4:hover{
     background:linear-gradient(180deg, rgba(255,141,22,1) 23%, rgba(255,253,109,1) 100%);}
 .box4{margin-bottom:3%;}
 a{text-decoration:none;
