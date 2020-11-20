@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!-- <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORMULAIRE</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="form.css"> MODIF CHANTAL-->
+    <title>test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="form.css">
 </head>
@@ -18,7 +24,7 @@
 
             <div class="titre">
                 <div class="telescope"><img class="telescope" src="./images/telescope-r.png" alt="telescope"></div>
-                <div class="blog"><h1>Le Blog</h1></div>
+                <div class="blog"><h1>Le Blog des Codeuses</h1></div>
               </div>
 
               <div class="reballs">
@@ -30,16 +36,16 @@
         <nav>
             <div class="articles">
                 <div class="image"><a href="sommaire.html"><img class="mini" src="./images/computer.png"></a></div>
-                <h3 class="lien">SOMMAIRE</h3>
+                <h3 class="lien">SOMMAIRE DE NOS DERNIERES PUBLICATIONS</h3>
             </div>
             <div class="accueil">
                 <div class="image"><a href="index.html"><img class="mini" src="./images/caien.png"></a></div>
-                <h3 class="lien">ACCUEIL</h3>
+                <h3 class="lien">RETOUR A L'ACCUEIL</h3>
             </div>
-            <div class="form">
+            <!-- MODIF CHANTAL NOUS SOMMES SUR LE FORMULAIRE <div class="form">
                 <div class="image"><a href="formulaire.html"><img class="mini" src="./images/photo-camera.png"></a></div>
                 <h3 class="lien">FORMULAIRE</h3>
-            </div>
+            </div> -->
         </nav>
     </header>
 
@@ -49,18 +55,32 @@
         <!--    <h4>FORMULAIRE</h4>  -->
             <h4>Poster un article</h4>        
             <form id="form1" method="post" action="http://localhost:3000/article">
+                <!-- MODIF CHANTAL POUR TOUS LES LABELS QUI CORRESPONDAIENT AU BLOG TEST ET NON AU PROJET BLOG -->
                 <div>
-                    <label for="titre">Titre de l'article :</label>
-                    <input type="text" name="titre" id="titre" placeholder="Titre de l'article" required/>
+                    <label for="name">Nom :</label>
+                    <input type="text" name="name" id="name" placeholder="Nom"/>
                 </div>
                 <div>
-                    <label for="auteur">Nom de l'auteur:</label>
-                    <input type="text" name="auteur" id="auteur" placeholder="Nom de l'auteur"required/>
+                    <label for="nickname">Prénom :</label>
+                    <input type="text" name="nickname" id="nickname" placeholder="Prénom"/>
+                </div>
+                <div>
+                    <label for="date">Date de publication :</label>
+                    <input type="date" id="date" name="date">
+                </div> 
+                <div>
+                    <label for="titre">Titre de l'article :</label>
+                    <input type="text" name="titre" id="titre" placeholder="Titre de l'article"/>
                 </div>
                 <div>
                     <label for="article">Votre article :</label>
-                    <textarea name="article" id="article" rows="10" cols="50" placeholder="Parlez nous de votre ressource" required></textarea>
+                    <textarea name="article" id="article" rows="10" cols="50" placeholder="Parlez nous de votre ressource"></textarea>
                 </div>
+                <div>
+                    <label for="ressourceUrl">Lien vers la ressource :</label>
+                    <input type="url" id="ressourceUrl" name="ressourceUrl" placeholder="Lien vers la ressource"/>
+                </div>               
+
                 <div>
                      <input type="submit"/ value=”Envoyer”>
                 </div>    
@@ -79,7 +99,7 @@
             <li class="one1">Maëlle</li>
             <li class="one1">Marie A</li>
         </ul>
-        <h5>Le Blog &copy; 2020</h5>
+        <h5>Le Blog des Codeuses &copy; 2020</h5>
 
     </footer>
     

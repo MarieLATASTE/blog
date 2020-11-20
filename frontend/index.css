@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-html{height:100%;} 
+/* html{height:100%;} MODIF CHANTAL SINON BACKGROUND NUL */
 body{font-family:'Roboto', sans-serif;
     background:rgb(61,2,2);
     background:radial-gradient(circle, rgba(61,2,2,1) 0%, rgba(41,24,4,1) 100%);

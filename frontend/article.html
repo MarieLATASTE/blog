@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!-- <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOMMAIRE</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="article.css">
+    <script type="text/javascript" src="article.js"></script> MODIF CHANTAL-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>affichage</title>
+    <title>ARTICLE</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="article.css">
+    <script type="text/javascript" src="article.js"></script>
 </head>
 <body>
     <header>
-    <!--    <div class="titre">
-            <img class="telescope" src="./images/telescope-r.png" alt="telescope">
-            <div class="up">
-            <div class="search">RECHERCHE</div>
-            <h1>LE BLOG</h1>
-            </div>
-        </div>
--->
         <div class="up">
             <div class="balls">
                 <div class="ball-1"><img src="./images/vis2.png" class="vis2" alt="vis"></div>
@@ -26,7 +26,7 @@
 
             <div class="titre">
                 <div class="telescope"><img class="telescope" src="./images/telescope-r.png" alt="telescope"></div>
-                <div class="blog"><h1>Le Blog</h1></div>
+                <div class="blog"><h1>Le Blog des Codeuses</h1></div>
               </div>
 
               <div class="reballs">
@@ -38,20 +38,24 @@
         <nav>
             <div class="articles">
                 <div class="image"><a href="sommaire.html"><img class="mini" src="./images/computer.png"></a></div>
-                <h3 class="lien">SOMMAIRE</h3>
+                <h3 class="lien">SOMMAIRE DE NOS DERNIERES PUBLICATIONS</h3>
             </div>
             <div class="accueil">
                 <div class="image"><a href="index.html"><img class="mini" src="./images/caien.png"></a></div>
-                <h3 class="lien">ACCUEIL</h3>
+                <h3 class="lien">RETOUR A L'ACCUEIL</h3>
             </div>
             <div class="form">
                 <div class="image"><a href="formulaire.html"><img class="mini" src="./images/photo-camera.png"></a></div>
-                <h3 class="lien">FORMULAIRE</h3>
+                <h3 class="lien">POSTER UN ARTICLE</h3>
             </div>
         </nav>
     </header>
 
-    <div class="article"><h3>ARTICLE</h3></div>
+    <div class="article">
+        <div class="archives"><h3>NOS ARCHIVES</h3>
+        <div id="archives"></div>
+        </div>
+    </div>
 
     <footer>
         <ul>
@@ -60,7 +64,7 @@
             <li class="one1">Maëlle</li>
             <li>Marie A</li>
         </ul>
-        <h5>Le Blog &copy; 2020</h5>
+        <h5>Le Blog des Codeuses &copy; 2020</h5>
 
     </footer>
 </body>

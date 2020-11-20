@@ -7,4 +7,13 @@
     margin-left:12vw;}
 h3{color:#6FE4EE;}
 
+/* AJOUT DE CHANTAL /  champ appelé par javascript pour affichage des données appelées  */
+#archives{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    color : black;
+}
+
 
