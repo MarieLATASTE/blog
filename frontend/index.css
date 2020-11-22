@@ -22,10 +22,9 @@ header{padding:3%;
 .vis2{width:20px;height:20px;}
 .ball-1{margin-left:3vh;}
 .search{border:1px solid #F57F17;
-        border-radius:20px;
-        background:linear-gradient(180deg,#FFF176,#BBDEFB);
+    border-radius:20px;
+    background:linear-gradient(180deg,#FFF176,#BBDEFB);
     width:13vh;
-    /* height:5vh; */
     margin-left:15vh; 
     display:flex;
     align-items:center;}
@@ -35,18 +34,15 @@ header{padding:3%;
   
 input[type=text] {
     padding: 5px;
-    /* margin-top: 8px; */
     font-size: 1.5rem;
     background:linear-gradient(180deg,#FFF176,#BBDEFB);
     border: 1px solid #F57F17;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
+    border-bottom-left-radius:20px;
+    border-top-left-radius:20px;
     width: 18vh;
 }
 .search-container button{
     float: right;
-    /* margin-top: 8px; */
-    /* margin-right: 16px; */
     background:linear-gradient(180deg,#FFF176,#BBDEFB);
     height:2.45rem; 
     border:1px solid#F57F17;

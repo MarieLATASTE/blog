@@ -18,7 +18,14 @@
         <div class="up">
             <div class="balls">
                 <div class="ball-1"><img src="./images/vis2.png" class="vis2" alt="vis"></div>
-                <div class="search">RECHERCHE</div>
+                <!--     <div class="search">RECHERCHE</div> + testsearch_container-->
+                <div class="search-container">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="Rechercher.." id="maRecherche" name="q">
+                      <button type="submit"><img class="key" src="./images/cogwheels-1.png"></button>
+                <!--     <i class="fa fa-search"></i><img src="./images/025-lamp.png" width="30">--> 
+                    </form>
+                    </div>
                 <div class="ball-2"><img src="./images/vis2.png" class="vis2" alt="vis"></div>
             </div>
 
@@ -52,8 +59,11 @@
     <div class="formulaire">
 <div class="leftF"><img src="./images/dragon0.png"></div>
         <div class="rightF">
-        <!--    <h4>FORMULAIRE</h4>  -->
-            <h4>Poster un article</h4>        
+            <div class="poster">
+                <div class="ball-7"><img src="./images/vis0.png" class="vis2" alt="vis"></div>
+                    <h4>Poster un article</h4> 
+                <div class="ball-8"><img src="./images/vis0.png" class="vis2" alt="vis"></div>
+            </div>       
             <form id="form1" method="post" action="http://localhost:3000/article">
                 <!-- MODIF CHANTAL POUR TOUS LES LABELS QUI CORRESPONDAIENT AU BLOG TEST ET NON AU PROJET BLOG -->
                 <div>
@@ -72,17 +82,19 @@
                     <label for="titre">Titre de l'article :</label>
                     <input type="text" name="titre" id="titre" placeholder="Titre de l'article"/>
                 </div>
-                <div>
+                <div class="Varticle">
                     <label for="article">Votre article :</label>
-                    <textarea name="article" id="article" rows="10" cols="50" placeholder="Parlez nous de votre ressource"></textarea>
+                    <textarea name="article" id="article" rows="10" cols="24" placeholder="Parlez nous de votre ressource"></textarea>
                 </div>
                 <div>
                     <label for="ressourceUrl">Lien vers la ressource :</label>
                     <input type="url" id="ressourceUrl" name="ressourceUrl" placeholder="Lien vers la ressource"/>
                 </div>               
 
-                <div>
-                     <input type="submit"/ value=”Envoyer”>
+                <div class="btn">
+                    <div class="ball-7"><img src="./images/vis0.png" class="vis2" alt="vis"></div>
+                    <input class="btn1" type="submit"/ value=”Envoyer”>
+                    <div class="ball-8"><img src="./images/vis0.png" class="vis2" alt="vis"></div>
                 </div>    
             </form> 
             

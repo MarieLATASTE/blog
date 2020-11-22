@@ -16,12 +16,16 @@ const getArts = async () => {
 const generateHtml = (data) => {
     let html = '';
     for (let i = data.length-2 ; i>data.length-5; i--){
-        html += `<div>
-        <div>${data[i].name}</div>
-        <div>${data[i].createdAt}</div>,
-        <div>${data[i].titre}</div>
-        <button type="button" onclick="getArticle('${data[i]._id}')">afficher</button>
-        </div>`
+        html += `<div class="container">
+        <div class="box1">
+        <div class="article">
+        <h3>Nos derniers articles</h3>
+        <div class="name">${data[i].name}</div>
+        <div class="date">${data[i].createdAt}</div>
+        <div class="titre">${data[i].titre}</div>
+        <button class="btn" type="button" onclick="getArticle('${data[i]._id}')">afficher</button>
+        </div>
+        <div>`
         const artdiv = document.querySelector('#test')
         artdiv.innerHTML = html}};
 getArts();
@@ -40,7 +44,7 @@ const getUnes = async () => {
 const generateHtmlUnes = (data) => {
     let html = '';
     for (let i = data.length-1 ; i>data.length-2; i--){
-        html += `<div>
+        html += `<div class="contain">
         <div>${data[i].name}</div>
         <div>${data[i].createdAt}</div>,
         <div>${data[i].titre}</div>
@@ -67,6 +71,8 @@ const generateHtmlArticle= (post) =>{
     <div>${post.titre}</div>
     <div>${post.article}</div>
     <div>${post.ressourceUrl}</div>
+    </div>
+    </div>
     </div>`
     const infodiv = document.querySelector('#article')
         infodiv.innerHTML = html};
