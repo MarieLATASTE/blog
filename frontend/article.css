@@ -1,19 +1,29 @@
-.article{width:74%;
-    height:60vh;
-    border:1px solid white;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* html{height:100%;} */
+@import "responsive.css";
+
+@media (min-width: 320px) {
+  #bottom, #top {
+    display: none;}
+}
+.article{width:100%; display: flex; justify-content: center;height:70vh;}
+.archive{width:100%;
+    height:50vh;
+    border:0.1em solid white;
     display:flex;
-    align-items:center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content:space-around;
     justify-content:center;
-    margin-left:12vw;}
-h3{color:#6FE4EE;}
+    margin:1em;}
+h3{color:#6FE4EE;font-size: 1.5vw;}
 
 /* AJOUT DE CHANTAL /  champ appelé par javascript pour affichage des données appelées  */
 #archives{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
-    color : black;
+    font-size: 2vw;
 }
 
 

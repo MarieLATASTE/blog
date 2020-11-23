@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* html{height:100%;} MODIF CHANTAL SINON BACKGROUND NUL */
+@import "responsive.css";
+
+@media (min-width: 320px) {
+  #bottom, #top {
+    display: none;}
+}
+input[type="text"]{font-size: 1.5vw;}
+.formulaire{
+    width:100%;height: 65vh;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.leftF{display:flex; width:50%; justify-content: center;align-items: center;height:60vh;}
+.leftF img{display:flex;height:40vh;justify-content: center;}
+.rightF{
+    font-size: 1.5vw;
+    width:50%;height:60vh;
+    display: flex;flex-direction:column;
+    flex-wrap: nowrap;
+    border:0.2em solid transparent;
+    border-radius:2em;
+    background:rgb(255,253,109);
+    background:linear-gradient(180deg, rgba(255,253,109,1) 43%, rgba(255,141,22,1) 100%);}
+input[type="submit"]{
+        border: 0;
+        line-height: 2.5vh;
+        padding: 0 0.2em;
+        font-size: 1rem;
+        text-align: center;
+        color: #fff;
+        border-radius: 2em;
+        background-color: rgba(220, 0, 0, 1);}
+        input[type="reset"]{
+            border: 0;
+            line-height: 2.5vh;
+            padding: 0 0.2em;
+            font-size: 1rem;
+            text-align: center;
+            color: #fff;
+            border-radius: 2em;
+            background-color: rgba(220, 0, 0, 1);}

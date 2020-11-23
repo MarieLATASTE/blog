@@ -1,139 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-/* html{height:100%;} MODIF CHANTAL SINON BACKGROUND NUL */
-body{font-family:'Roboto', sans-serif;
-    background:rgb(61,2,2);
-    background:radial-gradient(circle, rgba(61,2,2,1) 0%, rgba(41,24,4,1) 100%);
-    display:flex;
-    flex-direction:column;}
-header{padding:3%;
-    display:flex;
+/* html{height:100%;} */
+@import "responsive.css";
+
+body{
+    height: 100%;
+    font-family:'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background: radial-gradient(circle, rgba(61,2,2,1) 0%, rgba(41,24,4,1) 100%);
+  }
+  header{height:15%;display: flex;
+    position: relative;
+    top:0;
     flex-direction:column;
-    border:1px solid transparent;}
-.up{display:flex;
-    flex-direction:column;
-    justify-content:space-evenly;
-    height:50%;
-    border:1px solid transparent;
-    border-radius:20px;
+    border:0.1em solid transparent;
+    border-radius:2em;
     background:rgb(255,253,109);
     background:linear-gradient(180deg,rgba(255,253,109,1) 43%,rgba(255,141,22,1) 100%);}
-.balls{margin-top:3vh;
-    display:flex;justify-content:space-evenly;}
-.vis2{width:20px;height:20px;}
-.ball-1{margin-left:3vh;}
-.search{border:1px solid #F57F17;
-        border-radius:20px;
-        background:linear-gradient(180deg,#FFF176,#BBDEFB);
-    width:13vh;
-    /* height:5vh; */
-    margin-left:15vh; 
-    display:flex;
-    align-items:center;}
- /*.search-container {
-    display: inline;
-  }*/
-  
-input[type=text] {
-    padding: 5px;
-    /* margin-top: 8px; */
-    font-size: 1.5rem;
+.balls{display:flex;justify-content:space-between;}
+.vis2{height:2vh;margin:0.5em;}
+.form1{
+    display: flex; inline-size: auto;
+    margin:2em 0 0 0;border:0.05em solid #F57F17;
+    font-size: 1vw;
+    width: 5%;
+    height: 2.5vh;
+    margin: 0.5em 0 0 0 ;
     background:linear-gradient(180deg,#FFF176,#BBDEFB);
-    border: 1px solid #F57F17;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
-    width: 18vh;
-}
-.search-container button{
-    float: right;
-    /* margin-top: 8px; */
-    /* margin-right: 16px; */
-    background:linear-gradient(180deg,#FFF176,#BBDEFB);
-    height:2.45rem; 
-    border:1px solid#F57F17;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-    cursor: pointer;
-}
-.key{width: 1.5rem;height: 1.5rem;margin:auto;}
+    border-radius:2em;
+    display:flex;}
+.key{height: 2vh;}
 .search-container button:hover {
     background: rgba(61,2,2,1);
 }
-.ball-2{margin-right:3vh;}
 .titre{display:flex;
-    justify-content:space-around;}
-.telescope{padding-top:3%;
-    width:5rem;
-    height:5rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.telescope{
+    width:6vw;
     color:#3a3221;}
-.blog{margin-right:10vh;}
-.reballs{margin-bottom:3vh;
-    display:flex;
+.reballs{display:flex;
     justify-content:space-between;} 
-.ball-3{margin-left:3vh;}
-.ball-4{margin-right:3vh;} 
-h1{color:#1C0000;
-    margin-left:3rem;}
-h3, h5{color:#6FE4EE;
-    margin-top:0;
-    margin-bottom:0;}
-nav{display:flex;
-    justify-content:space-around;}
-    /* TEST 
-#test{display:inline-flex;
-    justify-content:space-between;}
-    */
+h1{color:#1C0000;font-size: 2vw;}
+h3, h5{color:#6FE4EE;font-size: 2vw;}
+.lien > h3{
+    font-size: 2.5vw;;
+    }
+    .blog >h1{font-size: 4vw;}
+.navigation{display:flex;height:10%;
+    flex-direction: row;justify-content: center;align-items: center;
+}
+nav{width:100%;height:10%;display:flex;margin:0.5em;flex-direction:row;justify-content: space-around;}
 .image{text-align:center;
-    padding:1rem;
-    border:1px solid transparent;
+    padding:0.1em;
+    border:0.1em solid transparent;
     border-radius:50%;}
-.image:hover{box-shadow:5px 10px 20px red inset;}
-.mini{width:3.5rem;
-    height:3.5rem;}
-.main{display:flex;
-    justify-content:space-around;}
-.left{width:40vh;}
-.left img{width:75%;
-    height:85%;
-    padding-left:2%;
-    padding-right:5%;}
-.right{width:40%;
-    margin-right:3%;
-    display: flex;flex-direction:column;
-    flex-wrap: wrap;
-    border:1px solid transparent;
-    border-radius:20px;
+.image:hover{box-shadow:5em 10em 20em red inset;}
+.mini{width: 6vw;}
+.main{display:flex;height: 65vh;
+    flex-direction: row;
+    justify-content:space-around;align-items: center;}
+.left{display:flex; width:50%; justify-content: center;align-items: center;height:60vh;}
+.left img{display: flex;;height:40vh;}
+.right{display: flex;flex-direction:column;
+    width:50%;
+    height:50vh;
+    flex-wrap: nowrap;
+    border:0.2em solid transparent;
+    border-radius:2em;
     background:rgb(255,253,109);
     background:linear-gradient(180deg, rgba(255,253,109,1) 43%, rgba(255,141,22,1) 100%);}
-p{height:75%;}
-.triballs{margin-bottom:3vh;
+.triballs{margin:0.5em;
     display:flex;justify-content:space-between;}
-.ball-5{margin-left:3vh;}
-.ball-6{margin-right:3vh;}
-footer{display:flex;
+.ball-5, .ball-6{display:flex;
+    justify-content:space-between;}
+.manifeste > h4{font-size: 2vw}
+.manifeste > p{font-size:1vw}
+footer{display:flex;height:7vh;
+    justify-content:center;align-items: center;text-align: center;margin: 1.5em;
+    line-height: 2vh;
+    font-size: 1vw;
     flex-direction:column;
     align-items:center;
-    justify-content:space-evenly;}
-ul > li{display:inline;
-    text-align: center;
+    justify-content:center;}
+.nous{display:flex;
     color:#6FE4EE;
-    font-size:1rem;
+    font-size:2vw;
     font-weight:bold;
-    letter-spacing:2px;}
-.one{padding-right:1rem;}
-.one1{padding-right:1rem;}
-@media(min-width:736px){
-    .search{width:20vh;
-        height:5vh;
-        display:flex;
-        justify-content:flex-start;
-        padding-right:30vh;}
-    .telescope{width:10rem;
-        height:10rem;}
-    .blog{font-size:48px;padding:0;}
-    .left,.right{width:50%;}
-    .right{margin-right:3%;}
-}
-@media(min-width:375){
-    .right p{height: 65%;}
-    .triballs{margin-bottom:3vh;}
-}
+    letter-spacing:0.5vw;}
+

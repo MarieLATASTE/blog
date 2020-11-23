@@ -1,2 +1,7 @@
 node_modules
+<<<<<<< HEAD
 config.json
+=======
+#config
+config.json
+>>>>>>> dcd2a4d31ebe3a549f304dca3a88d3d5d9668995

@@ -1,86 +1,62 @@
-.container{
-    border:1px solid transparent;
-    margin:0 5% 5% 5%;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* html{height:100%;} MODIF CHANTAL SINON BACKGROUND NUL */
+@import "responsive.css";
+
+@media (min-width: 320px) {
+  #bottom, #top {
+    display: none;}
+}
+.container1{width: 100%;
+    height:65vh;
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
+    flex-wrap: wrap;
     justify-content:space-around; 
     align-items:center; 
-    height:60vh;}
-/* COMMENTAIRE CHANTAL : la box1 doit être positionnée à gauche et plus haute que large,
-c'est le sommaire des articles les plus récents */
+    background: radial-gradient(circle, rgba(61,2,2,1) 0%, rgba(41,24,4,1) 100%);}
 .box1{
-    padding:1rem;
-    border:1px solid transparent;
-    border-radius:20px;
+    display:flex;
+    flex-direction: column;
+    border:0.1em solid transparent;
+    border-radius:1em;
     text-align:center;
+    line-height:1.5em;
     height:50vh;
-    box-shadow:10px 15px 25px 10px rgb(95, 18, 18) inset;
-    width:30%;}
-.contain{display:flex;
-    flex-direction:column;}
-/*.box2,*/
-/* COMMENTAIRE DE CHANTAL / séparation des box 3 et 4 qui n'auront pas la même taille
-j'ai augmenté la taille de la seconde qui doit contenir l'article */
+    box-shadow:10em 15em 25em 10em rgb(95, 18, 18) inset;
+    width:35%;}
+.box1,.box3 > h3{font-size:2vw;
+    margin:0.5em;}
 .box3{
-    padding:1.5rem;
-    border:1px solid white;
-    border-radius:20px;
-    text-align:center;
-    background:rgb(255,253,109);
+    padding:0.3em;border:0.1em solid white;
+    border-radius:1em;
+    line-height:2em;
     background:linear-gradient(180deg, rgba(255,253,109,1) 43%, rgba(255,141,22,1) 100%);
-    width:30%;
-    height:40vh;
-    margin-top:5%;}
-/*.box2:hover,*/ .box3:hover, .box4:hover{
+    width:40%;
+    height:65vh;}
+.box3:hover, .box4:hover{
     background:linear-gradient(180deg, rgba(255,141,22,1) 23%, rgba(255,253,109,1) 100%);}
 .box4{
-    padding:1.5rem;
-    border:1px solid white;
-    border-radius:20px;
-    text-align:center;
+    border:0.1em solid white;
+    border-radius:1em   ;
+    display:flex;justify-content:center;align-items:center;text-align:center;
     background:rgb(255,253,109);
     background:linear-gradient(180deg, rgba(255,253,109,1) 43%, rgba(255,141,22,1) 100%);
-    width:18vh;
-    height:8vh;
-    margin-top:5%;
-    margin-bottom:3%;}
+    width:15%;
+    height:10vh;
+font-size: 1vw;}
 a{text-decoration:none;
     color:#1C0000;}
 a:hover{color:#6FE4EE;
-    text-shadow:0px 10px 20px rgb(95, 18, 18);}
-footer{display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:space-evenly;}
-ul > li{display:inline;
-    color:#6FE4EE;
-    font-size:1rem;}
-.one{padding-right:1rem;}
-.one1{padding-right:1rem;}
-@media (min-width:768px){
-    .container{flex-wrap:wrap;
-        align-items:stretch;}
-    .contain{flex-direction:row;
-        justify-content: space-between;}
-    /* .box1{margin-left:22%;} COMMENTAIRE CHANTAL : je suppose qu'il y avait le dragon auparavant...*/
-    /* MODIF CHANTAL : sinon on ne peut pas redimensionner la box 3 à destination de l'article détaillé
-    .box2, .box3, .box4{
-        width:16vh;
-        height:16vh;} */
-}   
-@media (min-width: 1440px){
-    /* .box2, MODIF CHANTAL*/.box3, .box4{width:25vh;}
-}
-
-/* AJOUT DE CHANTAL /  champs appelés par javascript pour affichage des données appelées  */
+    text-shadow:0 10em 20em rgb(95, 18, 18);}
 #test{
     display: flex;
+    font-size: 1vw;
     flex-direction: column;
     justify-content: space-between;
 }
-
 #article{
     display: flex;
+    font-size: 1.5vw;
     flex-direction: column;
     justify-content: space-between;
 }

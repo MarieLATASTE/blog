@@ -9,8 +9,7 @@ const articleSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    createdAt: Date,
-    article:{
+    date:{
         type: String,
         required: true
     },
