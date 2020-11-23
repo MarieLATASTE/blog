@@ -42,21 +42,7 @@ textarea{background:rgb(255,253,109);background:linear-gradient(180deg,#FFF176,#
 textarea{margin-bottom:1em;margin-top:1em;margin-left:10%;width:40vw;height:20vh;}
 .poster{display: inline-flex;text-align:center;justify-content: space-between;}
 .btn{margin: 2em 0 0 0; display: flex; justify-content: space-between;}
-/* input[type="submit"]{
-        border: 0;
-        line-height: 2.5vh;
-        padding: 0 0.2em;
-        font-size: 1rem;
-        text-align: center;
-        color: #fff;
-        border-radius: 2em;
-        background-color: rgba(220, 0, 0, 1);}
-        input[type="reset"]{
-            border: 0;
-            line-height: 2.5vh;
-            padding: 0 0.2em;
-            font-size: 1rem;
-            text-align: center;
-            color: #fff;
-            border-radius: 2em;
-            background-color: rgba(220, 0, 0, 1);} */
+
+@media (min-width: 992px) {
+.rightF{height:70vh}
+ }
